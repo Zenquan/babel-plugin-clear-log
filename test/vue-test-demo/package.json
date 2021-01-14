@@ -14,7 +14,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@jomsou/clear-console-plugin": "^1.0.0-master.2b2b392",
+    "@jomsou/babel-plugin-clear-log": "^1.0.0-master.2b2b392",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",

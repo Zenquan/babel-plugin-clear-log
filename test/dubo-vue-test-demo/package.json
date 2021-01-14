@@ -64,7 +64,7 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.2",
-    "@jomsou/clear-console-plugin": "^1.0.0-master.2b2b392",
+    "@jomsou/babel-plugin-clear-log": "^1.0.0-master.2b2b392",
     "@sentry/browser": "^5.26.0",
     "@sentry/integrations": "^5.26.0",
     "@types/axios": "^0.14.0",

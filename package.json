@@ -10,7 +10,9 @@
   "author": "jomsoucan@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "babel-core": "^6.26.3"
+  },
+  "dependencies": {
     "babel-types": "^6.26.0"
   }
 }

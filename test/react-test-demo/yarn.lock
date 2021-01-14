@@ -1623,9 +1623,9 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jomsou/clear-console-plugin@^1.0.0-master.2b2b392":
+"@jomsou/babel-plugin-clear-log@^1.0.0-master.2b2b392":
   version "1.0.0-master.2b2b392"
-  resolved "https://registry.npm.taobao.org/@jomsou/clear-console-plugin/download/@jomsou/clear-console-plugin-1.0.0-master.2b2b392.tgz#48e797d7b65a4f464e9e392a0c25c1b4f8a5a93d"
+  resolved "https://registry.npm.taobao.org/@jomsou/babel-plugin-clear-log/download/@jomsou/babel-plugin-clear-log-1.0.0-master.2b2b392.tgz#48e797d7b65a4f464e9e392a0c25c1b4f8a5a93d"
   integrity sha1-SOeX17ZaT0ZOnjkqDCXBtPilqT0=
 
 "@nodelib/fs.scandir@2.1.3":

@@ -1,4 +1,4 @@
-const clearConsolePlugin = require('@jomsou/clear-console-plugin');
+const clearConsolePlugin = require('@jomsou/babel-plugin-clear-log');
 
 module.exports = {
   presets: ["@babel/preset-env"],

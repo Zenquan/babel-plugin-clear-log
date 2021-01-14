@@ -25,6 +25,7 @@
     "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "^0.3.7",
     "babel-preset-react-app": "^10.0.0",
+    "babel-types": "^6.26.0",
     "bfj": "^7.0.2",
     "camelcase": "^6.1.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
@@ -145,7 +146,7 @@
     ]
   },
   "devDependencies": {
-    "@jomsou/clear-console-plugin": "^1.0.0-master.2b2b392"
+    "@jomsou/babel-plugin-clear-log": "^1.0.0-master.2b2b392"
   },
   "jest": {
     "roots": [
@@ -166,7 +167,7 @@
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jsdom",
-    "testRunner": "/Users/zenquan/Workspace/GitHub/clear-console-plugin/test/react-test-demo/node_modules/jest-circus/runner.js",
+    "testRunner": "/Users/zenquan/Workspace/GitHub/babel-plugin-clear-log/test/react-test-demo/node_modules/jest-circus/runner.js",
     "transform": {
       "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",

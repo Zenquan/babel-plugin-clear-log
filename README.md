@@ -1,4 +1,4 @@
-## clear-console-plugin
+## babel-plugin-clear-log
 
 ### 安装
 ```bash
