@@ -1,7 +1,7 @@
 {
-  "name": "@jomsou/clear-console-plugin",
+  "name": "@jomsou/babel-plugin-clear-log",
   "version": "1.0.0",
-  "description": "This is a project about babel plugin",
+  "description": "This is a babel plugin about clear console.log",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "oswald";
+  src: url("oswald-medium-webfont.eot"); /* IE9 */
+  src: url("oswald-medium-webfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("oswald-medium-webfont.woff") format("woff"), /* chrome, firefox */
+  url("oswald-medium-webfont.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("oswald-medium-webfont.svg") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
+}
+
