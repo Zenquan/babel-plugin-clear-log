@@ -14,9 +14,30 @@ const exampleFn = () => {
 
 let d = babel.transform(exampleFn, {
   plugins: [
-    // clearConsolePlugin
-    clearConsolePlugin()
+    /**
+        { "disable": true }
+        () => {
+          console.log('111');
+          let a = 1;
+          console.log(a);
+          const fn = () => {
+            let a = 11;
+            console.log({ a: 1, b: 2 });
+          };
+        { "disable": false }  
+        () => {
+          let a = 1;
+
+          const fn = () => {
+            let a = 11;
+          };
+          return a;
+        };
+     */
+    [clearConsolePlugin, {
+      "disable": false
+    }]
   ]
 })
 
-console.log('>>>', d);
+console.log('>>>', d.code);

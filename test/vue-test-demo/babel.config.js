@@ -1,10 +1,12 @@
-const clearConsolePlugin = require('@jomsou/babel-plugin-clear-log');
+// const clearConsolePlugin = require('@jomsou/babel-plugin-clear-log');
 
 module.exports = {
   presets: [
     '@vue/cli-plugin-babel/preset',
   ],
   plugins: [
-    clearConsolePlugin
+    ["@jomsou/clear-log", {
+      "disable": process.env.NODE_ENV === 'development'
+    }]
   ]
 }
