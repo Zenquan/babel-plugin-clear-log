@@ -16,6 +16,7 @@ export default {
   },
   mounted() {
     console.log('111>>>', 111);
+    console.log('err>>>', 111);
   }
 }
 </script>

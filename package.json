@@ -1,6 +1,6 @@
 {
   "name": "@jomsou/babel-plugin-clear-log",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This is a babel plugin about clear console.log",
   "main": "./lib/index.js",
   "scripts": {

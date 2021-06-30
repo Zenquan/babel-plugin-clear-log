@@ -2,7 +2,7 @@ const babel = require('babel-core');
 const clearConsolePlugin = require('../lib')
 
 const exampleFn = () => {
-  console.log('111')
+  console.log('err', '1112222333')
   let a = 1;
   console.log(a)
   const fn = () => {

@@ -15,18 +15,7 @@ npm i @jomsou/babel-plugin-clear-log -D
 | --- | --- | --- | --- |
 | disable | <code>Boolean</code> | false | true为不起作用，false为起作用。 |
 
-eg：
-```js
-module.exports = {
-  presets: [
-  ],
-  plugins: [
-    ["@jomsou/clear-log", {
-      "disable": process.env.NODE_ENV === 'development'
-    }]
-  ]
-}
-```
+
 ```json
 {
   "scripts": {
@@ -41,7 +30,9 @@ module.exports = {
 ```js
 {
   "plugins": [
-    "@jomsou/clear-log"
+    ["@jomsou/clear-log", {
+      "disable": process.env.NODE_ENV === 'development'
+    }]
   ]
 }
 ```
@@ -51,14 +42,14 @@ const clearConsolePlugin = require('@jomsou/babel-plugin-clear-log')
 
 module.exports = {
   "plugins": [
-    clearConsolePlugin
-  ]
+    ["@jomsou/clear-log", {
+      "disable": process.env.NODE_ENV === 'development'
+    }]
 }
 ```
 
 #### webpack配置
 ```js
-const clearConsolePlugin = require('@jomsou/babel-plugin-clear-log')
 
 rules: [
     {
@@ -66,14 +57,17 @@ rules: [
       loader: 'babel-loader',
       options: {
         plugins: [
-            clearConsolePlugin
+            ["@jomsou/clear-log", {
+              "disable": process.env.NODE_ENV === 'development'
+            }]
         ]
       }
     }, exclude: /node_modules/}
   ]
 }
 ```
-
+**备注**
+当console出现在try...catch...的catch中，使用console.log('err', err)等包含`/err/`正则的写法，console.log不会被清除。
 
 更新日志：
 
@@ -81,3 +75,4 @@ rules: [
 - 2020.12.05 增加vue、react项目中使用实例
 - 2021.01.14 修复在.babelrc使用失败的问题
 - 2021.03.04 完成v1.1.0版本，新增传入是否作用的参数`disable`
+- 2021.07.01 完成v1.2.0版本，新增以上备注的点
