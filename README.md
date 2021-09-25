@@ -3,6 +3,9 @@
 ### 背景
 因为平时调试都有很多的log和debugger，所以就会导致上线的时候控制台出现很多log，为了控制台的整洁，便于后续排查问题，以及免除手动清除控制台，所以便需要写一个在打包到正式环境时自动去除log的插件。
 
+### 特性
+- 可去除不包含`/err/`正则的console.log
+
 ### 安装
 ```bash
 npm i @jomsou/babel-plugin-clear-log -D
