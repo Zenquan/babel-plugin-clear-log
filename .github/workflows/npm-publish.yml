@@ -20,8 +20,7 @@ jobs:
     - name: Release
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        npx version-from-git --allow-same-version --template 'master.short'
+        git config --local user.name "GitHub Action"'
     - name: Publish to npmjs
       run: | 
         npm publish --access public
